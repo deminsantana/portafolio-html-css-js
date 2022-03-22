@@ -27,7 +27,7 @@
                 </ul>
             </nav>
         </header>
-
+        <img src="" alt="">
 
         <main>
             <section>
@@ -45,6 +45,11 @@
                 <li><a href="http://">CSS</a></li>
                 <li><a href="http://">JavaScript</a></li>
             </ul>
+            <ol>
+                <li><a href="http://">HTML</a></li>
+                <li><a href="http://">CSS</a></li>
+                <li><a href="http://">JavaScript</a></li>
+            </ol>
         <br>
         <table border="2" align="center">
             <tr>
@@ -170,10 +175,20 @@
         <h1><font color="FFFFFF">Encabezado Blanco</font></h1>
         <br>
         <h2>Marcos o Frame</h2>
-        <frame>
-            <frameset cols="100, 25% *">A</frameset>
-            <frameset rows="100, 25% *">B</frameset>
-        <frame>
+        <frameset cols="100, 25% *">A</frameset>
+        <frameset rows="100, 25% *">B</frameset>
+        <frame noresize="noresize"> <!-- Éste atributo impide que el usuario pueda redimensionar un elemento-->
+        <frameset cols="25%, 50%, 25%">
+            <frame src="a.html">
+            <frame src="b.html">
+            <frame src="c.html">
+            <noframes>Los marcos no son soportados</noframes>
+        </frameset>
+        <br>
+        <div class="section">
+            <h1><span>My Media</span></h1>
+            <iframe height="150" width="300" src="www.youtube.com" allowfullscreen frameborder="0"></iframe>
+        </div>
         <footer>
             Mi Blog&copy; Ing. Demin Santana 2022. Todos los derechos reservados.
         </footer>
